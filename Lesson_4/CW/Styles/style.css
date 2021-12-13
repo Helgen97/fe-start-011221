@@ -1,0 +1,57 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background-color: #ffffff;
+}
+
+.header__navigation{
+    list-style: none;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header__navigation li{
+    display: inline-block;
+    width: 24%;
+}
+
+.header__navigation a{
+    color: #16a085;
+    font-weight: bold;
+    text-transform:uppercase;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+header + div > img{
+    width: 100%;
+}
+
+.container{
+    margin-top: 0;
+    text-align: center;
+    background-color: #f5f6f7;
+    padding: 2rem 10%;
+}
+
+.container__title{
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.container__description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container__btn{
+    background-color: #16a085;
+    width: 40%;
+    height: 3rem;
+}
