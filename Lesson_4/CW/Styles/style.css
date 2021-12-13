@@ -52,6 +52,16 @@ header + div > img{
 
 .container__btn{
     background-color: #16a085;
-    width: 40%;
-    height: 3rem;
+    width: 30%;
+    padding: 0.8rem 0.8rem;
+    display: inline-block;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer{
+    font-weight: 400;
+    text-align: right;
+    padding: 2rem 10%;
 }
