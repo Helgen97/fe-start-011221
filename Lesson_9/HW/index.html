@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="bg-info">
+        <nav class="navbar navbar-expand-md navbar-light w-75 mx-auto flex-wrap">
+            <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse align-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav px-5">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Каталог</a>
+                    </li>
+                    <li class="nav-item active px-3">
+                        <a class="nav-link" href="#">Обучение</a>
+                    </li>
+                    <li class="nav-item active pr-3">
+                        <a class="nav-link" href="#">Партнёрам</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Акции</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end">
+                <a href=""><img src="./img/loope.svg" alt=""></a>
+                <a class="px-4" href=""><img src="./img/user.svg" alt=""></a>
+                <a href=""><img src="./img/bag.svg" alt=""></a>
+            </div>
+
+            <div class="collapse navbar-collapse ">
+                <a href=""><img src="./img/home.svg" alt=""></a>
+                <img class="px-2" src="./img/arrow.svg" alt="" srcset="">
+                <a href="">Страница 1-го уровня</a>
+                <img class="px-2" src="./img/arrow.svg" alt="">
+                <a href="">Страница 2-го уровня</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="w-75 mx-auto mt-5">
+            <h4 class="border-bottom mb-4">Оформление заказа</h4>
+
+            <form action="" id="main">
+                <div class="main-div">
+                    <div class="form-div form-div-flex_left">
+                        <p class="div-title">Войти или зарегистрироваться</p>
+                        <input class="radio-circle" id="1" type="radio" form="main" name="1"><label
+                            class="radio-btn-label" for="1">Войти</label>
+                        <input class="radio-circle" id="2" type="radio" form="main" name="1"><label
+                            class="radio-btn-label" for="2">Зарегистрироваться</label>
+                    </div>
+                    <div class="form-div form-div-flex_right">
+                        <p class="div-title">Способ доставки</p>
+                        <input class="radio-circle" id="3" type="radio" form="main" name="2"><label
+                            class="radio-btn-label" for="3">Способ доставки</label>
+                        <input class="radio-circle" id="4" type="radio" form="main" name="2"><label
+                            class="radio-btn-label" for="4">Способ доставки</label>
+                        <input class="radio-circle" id="5" type="radio" form="main" name="2"><label
+                            class="radio-btn-label" for="5">Способ доставки</label>
+                    </div>
+                    <div class="form-div form-div-flex_left">
+                        <p class="div-title">Личные данные</p>
+                        <div>
+                            <label class="text-input-label" for="6">Ваше имя</label>
+                            <input class="text-input" type="text" name="6" id="" placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <label class="text-input-label" for="7">Ваша фамилия</label>
+                            <input class="text-input" type="text" name="7" id="" placeholder="Ваша фамилия">
+                        </div>
+                        <div>
+                            <label class="text-input-label" for="8">Электронный адрес</label>
+                            <input class="text-input" type="text" name="8" id="" placeholder="Электронный адрес">
+                        </div>
+                        <div>
+                            <label class="text-input-label" for="9">Мобильный номер</label>
+                            <input class="text-input" type="text" name="9" id="" placeholder="Мобильный номер">
+                        </div>
+                        <div>
+                            <label class="text-input-label" for="10">Дополнительный контакт</label>
+                            <input class="text-input" type="text" name="10" id="" placeholder="Мобильный номер">
+                        </div>
+                        <p class="div-title div-title-two">Данные о доставке</p>
+                        <div>
+                            <label class="text-input-label" for="11">Страна</label>
+                            <input class="text-input" type="text" name="11" id="" placeholder="Страна">
+                        </div>
+                        <div>
+                            <label class="text-input-label" for="12">Город</label>
+                            <input class="text-input" type="text" name="12" id="" placeholder="Город">
+                        </div>
+                        <div>
+                            <label class="text-input-label" for="13">Индекс</label>
+                            <input class="text-input" type="text" name="13" id="" placeholder="Индекс">
+                        </div>
+                    </div>
+                    <div class="form-div-column">
+                        <div class="form-div">
+                            <p class="div-title">Способ оплаты</p>
+                            <input class="radio-circle" id="14" type="radio" form="main" name="2"><label
+                                class="radio-btn-label" for="14">Способ оплаты</label>
+                            <input class="radio-circle" id="15" type="radio" form="main" name="2"><label
+                                class="radio-btn-label" for="15">Способ оплаты</label>
+                            <input class="radio-circle" id="16" type="radio" form="main" name="2"><label
+                                class="radio-btn-label" for="16">Способ оплаты</label>
+                        </div>
+                        <div class="form-div-table">
+                            <p class="div-title">Ваша корзина</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>Фото</td>
+                                        <td>Товар</td>
+                                        <td>Количество</td>
+                                        <td>Цена</td>
+                                        <td>Итого</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="./img/good.svg" alt=""></td>
+                                        <td>Название товара</td>
+                                        <td>
+                                            <input type="number" name="17" id="">
+                                            <div><button class="reload-btn"></button></div>
+                                            <div><button class="delete-btn"></button></div>
+                                        </td>
+                                        <td>10 23, 58 RUB</td>
+                                        <td>100 023, 58 RUB</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Cтоимость товара:</td>
+                                        <td>100 523, 58 RUB</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Доставка:</td>
+                                        <td>100 RUB</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>ИТОГО:</td>
+                                        <td>100 623, 58 RUB</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        <div class="form-div">
+                            <p class="div-title">Способ оплаты</p>
+                            <span class="div-comment">Дополнительные комментарии</span>
+                            <div class="div-textarea"><textarea class="text-input textarea"
+                                    placeholder="Дополнительные комментарии к заказу"></textarea></div>
+                            <input class="radio-square" type="radio" name="18" id="18"><label class="radio-btn-label"
+                                for="18">Согласие на обработку личных данных</label>
+                            <div class="checkout-btn-div"><button class="checkout-btn">Перейти к оплате</button></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="border-top">
+        <nav class="navbar navbar-expand-md navbar-light w-75 mx-auto flex-wrap">
+            <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
+            <div class="collapse navbar-collapse align-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav px-5">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Наша команда</a>
+                    </li>
+                    <li class="nav-item active px-3">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end">
+                <a href=""><img src="./img/facebook.svg" alt=""></a>
+                <a class="px-2" href=""><img src="./img/instagram.svg" alt=""></a>
+                <a href=""><img src="./img/youtube.svg" alt=""></a>
+                <a class="px-2" href=""><img src="./img/linkedin.svg" alt=""></a>
+                <a href=""><img src="./img/pinterest.svg" alt=""></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
