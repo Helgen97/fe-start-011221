@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+gap: 25px;
+}
+
+.grid > div:first-child{
+    grid-column: 1/4;
+    border-bottom: 1px solid #E2E2E2;
+    
+}
+
+.card__img>img{
+width: 100%;
+}
+
+@media screen and (max-width:850px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+    }
+
