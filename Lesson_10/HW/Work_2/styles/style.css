@@ -1,0 +1,258 @@
+body {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Raleway';
+    color: #354657;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #354657;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 50px;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.nav__list > ul {
+    display: flex;
+}
+
+.nav__list > ul > li {
+    padding: 0 1rem;
+}
+
+.nav__panel {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nav__panel > a {
+    padding: 0.8rem;
+}
+
+.banner {
+    background: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner > div {
+    width: 40%;
+    padding: 7rem 0;
+    color: white;
+    margin-left: 10rem;
+    animation: text_animation 2s linear;
+}
+
+.banner__text {
+    font-size: 1.2rem;
+}
+
+.article__main {
+    margin: 3rem 10rem 5rem;
+    display: flex;
+}
+
+.article__main > div:nth-child(1) {
+    margin-right: 5rem;
+}
+
+.main__title {
+    font-weight: 700;
+}
+
+.main__text {
+    font-weight: 400;
+}
+
+.main__text:nth-of-type(2) {
+    margin-bottom: 3rem;
+}
+
+.article__image {
+    box-shadow: 12px 12px #F0E5FF;
+}
+
+.banner__pink {
+    background-color: #F0E6FF;
+    padding: 0 10rem;
+    margin-bottom: 5rem;
+    display: flex;
+}
+
+.banner__pink-bottles {
+    margin-right: 3rem;
+    position: relative;
+}
+
+.bottle__left {
+    height: 15rem;
+    position: absolute;
+    top: 1.2rem;
+    animation: bottle_left 3s linear infinite;
+}
+
+.bottle__right {
+    height: 17rem;
+    margin-left: -4rem;
+    position: absolute;
+    left: 12rem;
+    bottom: -1rem;
+    animation: bottle_right 3s linear infinite;
+}
+
+.banner__pink-description {
+    padding: 3rem 0;
+    margin-left: auto;
+}
+
+.banner__pink-description span {
+    color: #946FD3;
+    font-size: 1.2rem;
+}
+
+.description_title {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.banner-title {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.card:nth-child(2) {
+    margin: 0 2rem;
+}
+
+.card > div {
+    padding: 1rem;
+}
+
+.card:hover > div {
+    animation: visibility .5s linear forwards;
+}
+
+.card:hover > img {
+    animation: visibility 2s linear forwards;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card > p {
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    background-color: #946FD3;
+    color: white;
+    transition: all .3s linear;
+    animation: card_rotate 2s linear forwards;
+}
+
+.card:hover > div > .button_white {
+    color: white;
+    background: #946FD3;
+    border-color: white;
+    transition: all .3s linear;
+}
+
+.button_pink {
+    background: #946FD3;
+}
+
+.button_white {
+    background-color: white;
+    border: 2px solid #946FD3;
+    color: #946FD3;
+}
+
+footer {
+    border-top: 1px solid #E2E2E2;
+}
+
+.footer > a {
+    padding: 0.4rem;
+}
+
+
+@keyframes text_animation {
+    from{
+        transform: translateX(-200%); 
+
+     } 
+ 
+     to{ 
+         transform: translateX(0px);  
+     }
+ 
+
+}
+
+@keyframes bottle_left {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+@keyframes bottle_right {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes card_rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {   
+        transform: rotateY(180deg);
+    }  
+}
+
+@keyframes visibility {
+    from {
+        visibility: inherit;
+    }
+
+    to {
+        visibility: hidden;
+    }
+}
